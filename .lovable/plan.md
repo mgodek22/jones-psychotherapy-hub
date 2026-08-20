@@ -41,9 +41,16 @@ The spec overrides the source files in two places, so the port deviates delibera
 
 No testimonials are added, and the 988 line stays in the footer and on `/resources`.
 
-## Open decision
+## Form handling: route to SimplePractice
 
-The consult and opt-in forms currently just swap to a thank-you message and store nothing. Options: (a) keep that exact behavior for now, (b) route submissions to email/SimplePractice, or (c) store them in Lovable Cloud with an admin view. Default if you don't say otherwise: **(a)**, matching the source, since (c) would put contact details in a database with no BAA.
+Booking goes to SimplePractice rather than being captured here — nothing is stored in this app, which keeps contact and clinical detail out of a database with no BAA.
+
+- `/book` presents the consult request as a direct handoff: primary button opens the SimplePractice client portal / request-appointment link in a new tab, with the phone number `(571) 582-8086` as the secondary path.
+- The name/email/phone/interest/location fields are kept only if SimplePractice can receive them via its embeddable widget or a prefilled link; otherwise `/book` drops the local form entirely rather than collecting data it cannot forward. Either way the free-text "What's bringing you in?" field is gone.
+- The `/guide` and `/explore` opt-in forms are a lead magnet (Quiet-the-Inner-Critic PDF), not intake. They keep the current no-storage behavior: submit shows the thank-you state and links straight to the PDF.
+
+Needed from you: the SimplePractice link (portal URL or Request-Appointment widget snippet). Until it arrives I will wire the buttons to the phone number and a clearly marked `TODO` constant in one place so the swap is a one-line change.
+
 
 ## Done when
 
