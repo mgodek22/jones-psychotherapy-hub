@@ -69,9 +69,10 @@ def html_path_to_route(href: str) -> str | None:
 
 
 def camel(prop: str):
-    parts = prop.strip().split("-")
-    if parts[0].startswith("--"):
-        return None
+    prop = prop.strip()
+    if prop.startswith("--"):
+        return prop
+    parts = prop.split("-")
     return parts[0] + "".join(p.capitalize() for p in parts[1:])
 
 
