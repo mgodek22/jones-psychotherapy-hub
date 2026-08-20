@@ -1,0 +1,11 @@
+<svg width="380" height="96" viewBox="0 0 380 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Emily M. Jones, LCSW, CGP — Psychotherapy">
+  <g transform="translate(8,18)">
+    <path d="M13 27 C15 37 21 44 30 44 C39 44 45 37 47 27 Z" fill="#863527"/>
+    <ellipse cx="30" cy="27" rx="17" ry="4.2" fill="#ffffff" stroke="#863527" stroke-width="1.4"/>
+    <path d="M30 27 L28.8 32 L31 36 L30 42" stroke="#9d6641" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31 36 L34.2 38.2" stroke="#9d6641" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="30" cy="27" r="1.5" fill="#9d6641"/>
+  </g>
+  <text x="86" y="46" font-family="Fraunces, Georgia, serif" font-size="29" font-weight="500" fill="#863527">Emily M. Jones</text>
+  <text x="87" y="66" font-family="Inter, Arial, sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.6" fill="#915b37">LCSW · CGP · PSYCHOTHERAPY</text>
+</svg>
