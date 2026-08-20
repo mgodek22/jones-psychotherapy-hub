@@ -1,0 +1,35 @@
+ADDING THE ORGANIZATION LOGOS  (optional, 10 minutes)
+Resources page — Jones Psychotherapy
+------------------------------------------------------------
+The resource cards are "logo-ready." Each shows a styled badge by
+default. Drop an official logo image into THIS folder with the exact
+filename below and it AUTOMATICALLY replaces the badge on that card.
+No file? The badge shows instead — nothing breaks. Emily's own logo
+(jones.png) is already here.
+
+WHY THESE AREN'T INCLUDED
+Each logo is the trademark of that organization. We don't have the
+right to redistribute their image files, so they can't ship inside
+this package. As the site owner linking to these groups as resources,
+you can add their official logos yourself — most publish a press or
+brand kit, or will email one if you ask.
+
+SAVE EACH AS (PNG with a transparent or white background, ~square,
+about 200x200px is plenty):
+
+  samhsa.png            samhsa.gov  (see their brand/logo guidance)
+  nami.png              nami.org  (About > Newsroom / brand assets)
+  emdria.png            emdria.org
+  ifs.png               ifs-institute.com
+  agpa.png              agpa.org
+  adaa.png              adaa.org
+  psi.png               postpartum.net
+  mha.png               mhanational.org
+  apa.png               apa.org
+  psychology-today.png  Psychology Today gives therapists an official
+                        "Verified by Psychology Today" badge inside
+                        your member account — that is the correct,
+                        licensed one to use here.
+  jones.png             your own logo (already added)
+
+TIP: crop tightly to the logo. Square images look best in the tiles.
