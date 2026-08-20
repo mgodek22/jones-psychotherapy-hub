@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
+import { FunnelHeader } from "./FunnelHeader";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 
@@ -9,13 +10,7 @@ export interface Crumb {
   to?: string;
 }
 
-export function SiteLayout({
-  children,
-  crumbs,
-}: {
-  children: ReactNode;
-  crumbs?: Crumb[];
-}) {
+export function SiteLayout({ children, crumbs }: { children: ReactNode; crumbs?: Crumb[] }) {
   return (
     <>
       <a className="skip" href="#main">
@@ -50,14 +45,8 @@ export function FunnelLayout({ children }: { children: ReactNode }) {
       <a className="skip" href="#main">
         Skip to content
       </a>
-      <FunnelHeaderSlot />
+      <FunnelHeader />
       <main id="main">{children}</main>
     </>
   );
 }
-
-function FunnelHeaderSlot() {
-  return <FunnelHeader />;
-}
-
-import { FunnelHeader } from "./FunnelHeader";
