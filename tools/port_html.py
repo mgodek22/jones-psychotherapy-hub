@@ -93,6 +93,7 @@ def convert(fragment: str) -> str:
     fragment = re.sub(r"<!--.*?-->", "", fragment, flags=re.S)
 
     out = []
+    stack: list[str] = []
     pos = 0
     for m in TAG_RE.finditer(fragment):
         out.append(escape_text(fragment[pos : m.start()]))
@@ -101,7 +102,8 @@ def convert(fragment: str) -> str:
         lower = tag.lower()
 
         if closing:
-            out.append(f"</{TAG_RENAME.get(lower, lower)}>")
+            name_out = stack.pop() if stack else lower
+            out.append(f"</{name_out}>")
             continue
 
         attrs = []
@@ -151,6 +153,7 @@ def convert(fragment: str) -> str:
         if lower in VOID or selfclose:
             out.append(f"<{name_out}{attr_text} />")
         else:
+            stack.append(name_out)
             out.append(f"<{name_out}{attr_text}>")
 
     out.append(escape_text(fragment[pos:]))
