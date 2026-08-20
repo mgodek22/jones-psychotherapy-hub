@@ -48,7 +48,7 @@ DATA_URI_ASSETS = [
     ("flogo", "/brand/jones-vase-icon.png"),
 ]
 
-BOOLEAN_ATTRS = {"required", "disabled", "checked", "selected", "readonly", "multiple"}
+BOOLEAN_ATTRS = {"required", "disabled", "checked", "selected", "readonly", "multiple", "open"}
 
 
 def html_path_to_route(href: str) -> str | None:
@@ -71,7 +71,7 @@ def html_path_to_route(href: str) -> str | None:
 def camel(prop: str):
     prop = prop.strip()
     if prop.startswith("--"):
-        return prop
+        return None  # unused custom props; React needs a cast for these
     parts = prop.split("-")
     return parts[0] + "".join(p.capitalize() for p in parts[1:])
 
