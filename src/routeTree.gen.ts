@@ -13,18 +13,30 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ArlingtonRouteImport } from './routes/arlington'
 import { Route as BookRouteImport } from './routes/book'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CouplesRouteImport } from './routes/couples'
+import { Route as CouplesTherapyRouteImport } from './routes/couples-therapy'
 import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FeesRouteImport } from './routes/fees'
+import { Route as FeesFaqsRouteImport } from './routes/fees-faqs'
+import { Route as FreeconsultRouteImport } from './routes/freeconsult'
 import { Route as GoodFaithEstimateRouteImport } from './routes/good-faith-estimate'
 import { Route as GroupRouteImport } from './routes/group'
+import { Route as GroupTherapyRouteImport } from './routes/group-therapy'
 import { Route as GuideRouteImport } from './routes/guide'
+import { Route as HomeRouteImport } from './routes/home'
 import { Route as IndividualRouteImport } from './routes/individual'
+import { Route as IndividualSupervisionRouteImport } from './routes/individual-supervision'
+import { Route as IndividualTherapyRouteImport } from './routes/individual-therapy'
+import { Route as InsuranceinfoRouteImport } from './routes/insuranceinfo'
 import { Route as McleanRouteImport } from './routes/mclean'
 import { Route as NoSurprisesActRouteImport } from './routes/no-surprises-act'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as SupervisionGroupForTherapistRouteImport } from './routes/supervision-group-for-therapist'
+import { Route as ThankyouRouteImport } from './routes/thankyou'
+import { Route as TherapyinfoRouteImport } from './routes/therapyinfo'
 import { Route as WhatIsEmdrRouteImport } from './routes/what-is-emdr'
 import { Route as WhatIsGroupTherapyRouteImport } from './routes/what-is-group-therapy'
 import { Route as WhatIsIfsRouteImport } from './routes/what-is-ifs'
@@ -61,9 +73,19 @@ const BookRoute = BookRouteImport.update({
   path: '/book',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CouplesRoute = CouplesRouteImport.update({
   id: '/couples',
   path: '/couples',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CouplesTherapyRoute = CouplesTherapyRouteImport.update({
+  id: '/couples-therapy',
+  path: '/couples-therapy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExploreRoute = ExploreRouteImport.update({
@@ -81,6 +103,16 @@ const FeesRoute = FeesRouteImport.update({
   path: '/fees',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FeesFaqsRoute = FeesFaqsRouteImport.update({
+  id: '/fees-faqs',
+  path: '/fees-faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FreeconsultRoute = FreeconsultRouteImport.update({
+  id: '/freeconsult',
+  path: '/freeconsult',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GoodFaithEstimateRoute = GoodFaithEstimateRouteImport.update({
   id: '/good-faith-estimate',
   path: '/good-faith-estimate',
@@ -91,14 +123,39 @@ const GroupRoute = GroupRouteImport.update({
   path: '/group',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GroupTherapyRoute = GroupTherapyRouteImport.update({
+  id: '/group-therapy',
+  path: '/group-therapy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GuideRoute = GuideRouteImport.update({
   id: '/guide',
   path: '/guide',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HomeRoute = HomeRouteImport.update({
+  id: '/home',
+  path: '/home',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndividualRoute = IndividualRouteImport.update({
   id: '/individual',
   path: '/individual',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndividualSupervisionRoute = IndividualSupervisionRouteImport.update({
+  id: '/individual-supervision',
+  path: '/individual-supervision',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndividualTherapyRoute = IndividualTherapyRouteImport.update({
+  id: '/individual-therapy',
+  path: '/individual-therapy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsuranceinfoRoute = InsuranceinfoRouteImport.update({
+  id: '/insuranceinfo',
+  path: '/insuranceinfo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McleanRoute = McleanRouteImport.update({
@@ -119,6 +176,22 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
 const ResourcesRoute = ResourcesRouteImport.update({
   id: '/resources',
   path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupervisionGroupForTherapistRoute =
+  SupervisionGroupForTherapistRouteImport.update({
+    id: '/supervision-group-for-therapist',
+    path: '/supervision-group-for-therapist',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ThankyouRoute = ThankyouRouteImport.update({
+  id: '/thankyou',
+  path: '/thankyou',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TherapyinfoRoute = TherapyinfoRouteImport.update({
+  id: '/therapyinfo',
+  path: '/therapyinfo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WhatIsEmdrRoute = WhatIsEmdrRouteImport.update({
@@ -209,18 +282,30 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/arlington': typeof ArlingtonRoute
   '/book': typeof BookRoute
+  '/contact': typeof ContactRoute
   '/couples': typeof CouplesRoute
+  '/couples-therapy': typeof CouplesTherapyRoute
   '/explore': typeof ExploreRoute
   '/faq': typeof FaqRoute
   '/fees': typeof FeesRoute
+  '/fees-faqs': typeof FeesFaqsRoute
+  '/freeconsult': typeof FreeconsultRoute
   '/good-faith-estimate': typeof GoodFaithEstimateRoute
   '/group': typeof GroupRoute
+  '/group-therapy': typeof GroupTherapyRoute
   '/guide': typeof GuideRoute
+  '/home': typeof HomeRoute
   '/individual': typeof IndividualRoute
+  '/individual-supervision': typeof IndividualSupervisionRoute
+  '/individual-therapy': typeof IndividualTherapyRoute
+  '/insuranceinfo': typeof InsuranceinfoRoute
   '/mclean': typeof McleanRoute
   '/no-surprises-act': typeof NoSurprisesActRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/resources': typeof ResourcesRoute
+  '/supervision-group-for-therapist': typeof SupervisionGroupForTherapistRoute
+  '/thankyou': typeof ThankyouRoute
+  '/therapyinfo': typeof TherapyinfoRoute
   '/what-is-emdr': typeof WhatIsEmdrRoute
   '/what-is-group-therapy': typeof WhatIsGroupTherapyRoute
   '/what-is-ifs': typeof WhatIsIfsRoute
@@ -242,18 +327,30 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/arlington': typeof ArlingtonRoute
   '/book': typeof BookRoute
+  '/contact': typeof ContactRoute
   '/couples': typeof CouplesRoute
+  '/couples-therapy': typeof CouplesTherapyRoute
   '/explore': typeof ExploreRoute
   '/faq': typeof FaqRoute
   '/fees': typeof FeesRoute
+  '/fees-faqs': typeof FeesFaqsRoute
+  '/freeconsult': typeof FreeconsultRoute
   '/good-faith-estimate': typeof GoodFaithEstimateRoute
   '/group': typeof GroupRoute
+  '/group-therapy': typeof GroupTherapyRoute
   '/guide': typeof GuideRoute
+  '/home': typeof HomeRoute
   '/individual': typeof IndividualRoute
+  '/individual-supervision': typeof IndividualSupervisionRoute
+  '/individual-therapy': typeof IndividualTherapyRoute
+  '/insuranceinfo': typeof InsuranceinfoRoute
   '/mclean': typeof McleanRoute
   '/no-surprises-act': typeof NoSurprisesActRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/resources': typeof ResourcesRoute
+  '/supervision-group-for-therapist': typeof SupervisionGroupForTherapistRoute
+  '/thankyou': typeof ThankyouRoute
+  '/therapyinfo': typeof TherapyinfoRoute
   '/what-is-emdr': typeof WhatIsEmdrRoute
   '/what-is-group-therapy': typeof WhatIsGroupTherapyRoute
   '/what-is-ifs': typeof WhatIsIfsRoute
@@ -276,18 +373,30 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/arlington': typeof ArlingtonRoute
   '/book': typeof BookRoute
+  '/contact': typeof ContactRoute
   '/couples': typeof CouplesRoute
+  '/couples-therapy': typeof CouplesTherapyRoute
   '/explore': typeof ExploreRoute
   '/faq': typeof FaqRoute
   '/fees': typeof FeesRoute
+  '/fees-faqs': typeof FeesFaqsRoute
+  '/freeconsult': typeof FreeconsultRoute
   '/good-faith-estimate': typeof GoodFaithEstimateRoute
   '/group': typeof GroupRoute
+  '/group-therapy': typeof GroupTherapyRoute
   '/guide': typeof GuideRoute
+  '/home': typeof HomeRoute
   '/individual': typeof IndividualRoute
+  '/individual-supervision': typeof IndividualSupervisionRoute
+  '/individual-therapy': typeof IndividualTherapyRoute
+  '/insuranceinfo': typeof InsuranceinfoRoute
   '/mclean': typeof McleanRoute
   '/no-surprises-act': typeof NoSurprisesActRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/resources': typeof ResourcesRoute
+  '/supervision-group-for-therapist': typeof SupervisionGroupForTherapistRoute
+  '/thankyou': typeof ThankyouRoute
+  '/therapyinfo': typeof TherapyinfoRoute
   '/what-is-emdr': typeof WhatIsEmdrRoute
   '/what-is-group-therapy': typeof WhatIsGroupTherapyRoute
   '/what-is-ifs': typeof WhatIsIfsRoute
@@ -311,18 +420,30 @@ export interface FileRouteTypes {
     | '/about'
     | '/arlington'
     | '/book'
+    | '/contact'
     | '/couples'
+    | '/couples-therapy'
     | '/explore'
     | '/faq'
     | '/fees'
+    | '/fees-faqs'
+    | '/freeconsult'
     | '/good-faith-estimate'
     | '/group'
+    | '/group-therapy'
     | '/guide'
+    | '/home'
     | '/individual'
+    | '/individual-supervision'
+    | '/individual-therapy'
+    | '/insuranceinfo'
     | '/mclean'
     | '/no-surprises-act'
     | '/privacy-policy'
     | '/resources'
+    | '/supervision-group-for-therapist'
+    | '/thankyou'
+    | '/therapyinfo'
     | '/what-is-emdr'
     | '/what-is-group-therapy'
     | '/what-is-ifs'
@@ -344,18 +465,30 @@ export interface FileRouteTypes {
     | '/about'
     | '/arlington'
     | '/book'
+    | '/contact'
     | '/couples'
+    | '/couples-therapy'
     | '/explore'
     | '/faq'
     | '/fees'
+    | '/fees-faqs'
+    | '/freeconsult'
     | '/good-faith-estimate'
     | '/group'
+    | '/group-therapy'
     | '/guide'
+    | '/home'
     | '/individual'
+    | '/individual-supervision'
+    | '/individual-therapy'
+    | '/insuranceinfo'
     | '/mclean'
     | '/no-surprises-act'
     | '/privacy-policy'
     | '/resources'
+    | '/supervision-group-for-therapist'
+    | '/thankyou'
+    | '/therapyinfo'
     | '/what-is-emdr'
     | '/what-is-group-therapy'
     | '/what-is-ifs'
@@ -377,18 +510,30 @@ export interface FileRouteTypes {
     | '/about'
     | '/arlington'
     | '/book'
+    | '/contact'
     | '/couples'
+    | '/couples-therapy'
     | '/explore'
     | '/faq'
     | '/fees'
+    | '/fees-faqs'
+    | '/freeconsult'
     | '/good-faith-estimate'
     | '/group'
+    | '/group-therapy'
     | '/guide'
+    | '/home'
     | '/individual'
+    | '/individual-supervision'
+    | '/individual-therapy'
+    | '/insuranceinfo'
     | '/mclean'
     | '/no-surprises-act'
     | '/privacy-policy'
     | '/resources'
+    | '/supervision-group-for-therapist'
+    | '/thankyou'
+    | '/therapyinfo'
     | '/what-is-emdr'
     | '/what-is-group-therapy'
     | '/what-is-ifs'
@@ -411,18 +556,30 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ArlingtonRoute: typeof ArlingtonRoute
   BookRoute: typeof BookRoute
+  ContactRoute: typeof ContactRoute
   CouplesRoute: typeof CouplesRoute
+  CouplesTherapyRoute: typeof CouplesTherapyRoute
   ExploreRoute: typeof ExploreRoute
   FaqRoute: typeof FaqRoute
   FeesRoute: typeof FeesRoute
+  FeesFaqsRoute: typeof FeesFaqsRoute
+  FreeconsultRoute: typeof FreeconsultRoute
   GoodFaithEstimateRoute: typeof GoodFaithEstimateRoute
   GroupRoute: typeof GroupRoute
+  GroupTherapyRoute: typeof GroupTherapyRoute
   GuideRoute: typeof GuideRoute
+  HomeRoute: typeof HomeRoute
   IndividualRoute: typeof IndividualRoute
+  IndividualSupervisionRoute: typeof IndividualSupervisionRoute
+  IndividualTherapyRoute: typeof IndividualTherapyRoute
+  InsuranceinfoRoute: typeof InsuranceinfoRoute
   McleanRoute: typeof McleanRoute
   NoSurprisesActRoute: typeof NoSurprisesActRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ResourcesRoute: typeof ResourcesRoute
+  SupervisionGroupForTherapistRoute: typeof SupervisionGroupForTherapistRoute
+  ThankyouRoute: typeof ThankyouRoute
+  TherapyinfoRoute: typeof TherapyinfoRoute
   WhatIsEmdrRoute: typeof WhatIsEmdrRoute
   WhatIsGroupTherapyRoute: typeof WhatIsGroupTherapyRoute
   WhatIsIfsRoute: typeof WhatIsIfsRoute
@@ -470,11 +627,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BookRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/couples': {
       id: '/couples'
       path: '/couples'
       fullPath: '/couples'
       preLoaderRoute: typeof CouplesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/couples-therapy': {
+      id: '/couples-therapy'
+      path: '/couples-therapy'
+      fullPath: '/couples-therapy'
+      preLoaderRoute: typeof CouplesTherapyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/explore': {
@@ -498,6 +669,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FeesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/fees-faqs': {
+      id: '/fees-faqs'
+      path: '/fees-faqs'
+      fullPath: '/fees-faqs'
+      preLoaderRoute: typeof FeesFaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/freeconsult': {
+      id: '/freeconsult'
+      path: '/freeconsult'
+      fullPath: '/freeconsult'
+      preLoaderRoute: typeof FreeconsultRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/good-faith-estimate': {
       id: '/good-faith-estimate'
       path: '/good-faith-estimate'
@@ -512,6 +697,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GroupRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/group-therapy': {
+      id: '/group-therapy'
+      path: '/group-therapy'
+      fullPath: '/group-therapy'
+      preLoaderRoute: typeof GroupTherapyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/guide': {
       id: '/guide'
       path: '/guide'
@@ -519,11 +711,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GuideRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/home': {
+      id: '/home'
+      path: '/home'
+      fullPath: '/home'
+      preLoaderRoute: typeof HomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/individual': {
       id: '/individual'
       path: '/individual'
       fullPath: '/individual'
       preLoaderRoute: typeof IndividualRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/individual-supervision': {
+      id: '/individual-supervision'
+      path: '/individual-supervision'
+      fullPath: '/individual-supervision'
+      preLoaderRoute: typeof IndividualSupervisionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/individual-therapy': {
+      id: '/individual-therapy'
+      path: '/individual-therapy'
+      fullPath: '/individual-therapy'
+      preLoaderRoute: typeof IndividualTherapyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insuranceinfo': {
+      id: '/insuranceinfo'
+      path: '/insuranceinfo'
+      fullPath: '/insuranceinfo'
+      preLoaderRoute: typeof InsuranceinfoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mclean': {
@@ -552,6 +772,27 @@ declare module '@tanstack/react-router' {
       path: '/resources'
       fullPath: '/resources'
       preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/supervision-group-for-therapist': {
+      id: '/supervision-group-for-therapist'
+      path: '/supervision-group-for-therapist'
+      fullPath: '/supervision-group-for-therapist'
+      preLoaderRoute: typeof SupervisionGroupForTherapistRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thankyou': {
+      id: '/thankyou'
+      path: '/thankyou'
+      fullPath: '/thankyou'
+      preLoaderRoute: typeof ThankyouRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/therapyinfo': {
+      id: '/therapyinfo'
+      path: '/therapyinfo'
+      fullPath: '/therapyinfo'
+      preLoaderRoute: typeof TherapyinfoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/what-is-emdr': {
@@ -667,18 +908,30 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ArlingtonRoute: ArlingtonRoute,
   BookRoute: BookRoute,
+  ContactRoute: ContactRoute,
   CouplesRoute: CouplesRoute,
+  CouplesTherapyRoute: CouplesTherapyRoute,
   ExploreRoute: ExploreRoute,
   FaqRoute: FaqRoute,
   FeesRoute: FeesRoute,
+  FeesFaqsRoute: FeesFaqsRoute,
+  FreeconsultRoute: FreeconsultRoute,
   GoodFaithEstimateRoute: GoodFaithEstimateRoute,
   GroupRoute: GroupRoute,
+  GroupTherapyRoute: GroupTherapyRoute,
   GuideRoute: GuideRoute,
+  HomeRoute: HomeRoute,
   IndividualRoute: IndividualRoute,
+  IndividualSupervisionRoute: IndividualSupervisionRoute,
+  IndividualTherapyRoute: IndividualTherapyRoute,
+  InsuranceinfoRoute: InsuranceinfoRoute,
   McleanRoute: McleanRoute,
   NoSurprisesActRoute: NoSurprisesActRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ResourcesRoute: ResourcesRoute,
+  SupervisionGroupForTherapistRoute: SupervisionGroupForTherapistRoute,
+  ThankyouRoute: ThankyouRoute,
+  TherapyinfoRoute: TherapyinfoRoute,
   WhatIsEmdrRoute: WhatIsEmdrRoute,
   WhatIsGroupTherapyRoute: WhatIsGroupTherapyRoute,
   WhatIsIfsRoute: WhatIsIfsRoute,
