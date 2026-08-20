@@ -34,6 +34,7 @@ import { Route as McleanRouteImport } from './routes/mclean'
 import { Route as NoSurprisesActRouteImport } from './routes/no-surprises-act'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SupervisionGroupForTherapistRouteImport } from './routes/supervision-group-for-therapist'
 import { Route as ThankyouRouteImport } from './routes/thankyou'
 import { Route as TherapyinfoRouteImport } from './routes/therapyinfo'
@@ -178,6 +179,11 @@ const ResourcesRoute = ResourcesRouteImport.update({
   path: '/resources',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SupervisionGroupForTherapistRoute =
   SupervisionGroupForTherapistRouteImport.update({
     id: '/supervision-group-for-therapist',
@@ -303,6 +309,7 @@ export interface FileRoutesByFullPath {
   '/no-surprises-act': typeof NoSurprisesActRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/resources': typeof ResourcesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/supervision-group-for-therapist': typeof SupervisionGroupForTherapistRoute
   '/thankyou': typeof ThankyouRoute
   '/therapyinfo': typeof TherapyinfoRoute
@@ -348,6 +355,7 @@ export interface FileRoutesByTo {
   '/no-surprises-act': typeof NoSurprisesActRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/resources': typeof ResourcesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/supervision-group-for-therapist': typeof SupervisionGroupForTherapistRoute
   '/thankyou': typeof ThankyouRoute
   '/therapyinfo': typeof TherapyinfoRoute
@@ -394,6 +402,7 @@ export interface FileRoutesById {
   '/no-surprises-act': typeof NoSurprisesActRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/resources': typeof ResourcesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/supervision-group-for-therapist': typeof SupervisionGroupForTherapistRoute
   '/thankyou': typeof ThankyouRoute
   '/therapyinfo': typeof TherapyinfoRoute
@@ -441,6 +450,7 @@ export interface FileRouteTypes {
     | '/no-surprises-act'
     | '/privacy-policy'
     | '/resources'
+    | '/sitemap.xml'
     | '/supervision-group-for-therapist'
     | '/thankyou'
     | '/therapyinfo'
@@ -486,6 +496,7 @@ export interface FileRouteTypes {
     | '/no-surprises-act'
     | '/privacy-policy'
     | '/resources'
+    | '/sitemap.xml'
     | '/supervision-group-for-therapist'
     | '/thankyou'
     | '/therapyinfo'
@@ -531,6 +542,7 @@ export interface FileRouteTypes {
     | '/no-surprises-act'
     | '/privacy-policy'
     | '/resources'
+    | '/sitemap.xml'
     | '/supervision-group-for-therapist'
     | '/thankyou'
     | '/therapyinfo'
@@ -577,6 +589,7 @@ export interface RootRouteChildren {
   NoSurprisesActRoute: typeof NoSurprisesActRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ResourcesRoute: typeof ResourcesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SupervisionGroupForTherapistRoute: typeof SupervisionGroupForTherapistRoute
   ThankyouRoute: typeof ThankyouRoute
   TherapyinfoRoute: typeof TherapyinfoRoute
@@ -774,6 +787,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResourcesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/supervision-group-for-therapist': {
       id: '/supervision-group-for-therapist'
       path: '/supervision-group-for-therapist'
@@ -929,6 +949,7 @@ const rootRouteChildren: RootRouteChildren = {
   NoSurprisesActRoute: NoSurprisesActRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ResourcesRoute: ResourcesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SupervisionGroupForTherapistRoute: SupervisionGroupForTherapistRoute,
   ThankyouRoute: ThankyouRoute,
   TherapyinfoRoute: TherapyinfoRoute,
