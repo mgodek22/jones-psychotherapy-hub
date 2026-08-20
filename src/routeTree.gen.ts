@@ -10,33 +10,434 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ArlingtonRouteImport } from './routes/arlington'
+import { Route as BookRouteImport } from './routes/book'
+import { Route as CouplesRouteImport } from './routes/couples'
+import { Route as ExploreRouteImport } from './routes/explore'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as FeesRouteImport } from './routes/fees'
+import { Route as GoodFaithEstimateRouteImport } from './routes/good-faith-estimate'
+import { Route as GroupRouteImport } from './routes/group'
+import { Route as GuideRouteImport } from './routes/guide'
+import { Route as IndividualRouteImport } from './routes/individual'
+import { Route as McleanRouteImport } from './routes/mclean'
+import { Route as NoSurprisesActRouteImport } from './routes/no-surprises-act'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as WhatIsEmdrRouteImport } from './routes/what-is-emdr'
+import { Route as WhatIsGroupTherapyRouteImport } from './routes/what-is-group-therapy'
+import { Route as WhatIsIfsRouteImport } from './routes/what-is-ifs'
+import { Route as WhatIsLcswRouteImport } from './routes/what-is-lcsw'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BlogHowCouplesTherapyWorksRouteImport } from './routes/blog.how-couples-therapy-works'
+import { Route as BlogHowToFindATherapistNorthernVirginiaRouteImport } from './routes/blog.how-to-find-a-therapist-northern-virginia'
+import { Route as BlogHowToSupportAStrugglingPartnerRouteImport } from './routes/blog.how-to-support-a-struggling-partner'
+import { Route as BlogWhatIsEmdrRouteImport } from './routes/blog.what-is-emdr'
+import { Route as BlogWhatIsGroupTherapyRouteImport } from './routes/blog.what-is-group-therapy'
+import { Route as BlogWhatIsIfsRouteImport } from './routes/blog.what-is-ifs'
+import { Route as BlogWhatToExpectFirstSessionRouteImport } from './routes/blog.what-to-expect-first-session'
+import { Route as BlogWhatToExpectTraumaTherapyRouteImport } from './routes/blog.what-to-expect-trauma-therapy'
+import { Route as BlogWhyHighFunctioningAnxietyRouteImport } from './routes/blog.why-high-functioning-anxiety'
+import { Route as BlogWhyOutOfNetworkTherapyRouteImport } from './routes/blog.why-out-of-network-therapy'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArlingtonRoute = ArlingtonRouteImport.update({
+  id: '/arlington',
+  path: '/arlington',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BookRoute = BookRouteImport.update({
+  id: '/book',
+  path: '/book',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CouplesRoute = CouplesRouteImport.update({
+  id: '/couples',
+  path: '/couples',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExploreRoute = ExploreRouteImport.update({
+  id: '/explore',
+  path: '/explore',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeesRoute = FeesRouteImport.update({
+  id: '/fees',
+  path: '/fees',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GoodFaithEstimateRoute = GoodFaithEstimateRouteImport.update({
+  id: '/good-faith-estimate',
+  path: '/good-faith-estimate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GroupRoute = GroupRouteImport.update({
+  id: '/group',
+  path: '/group',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuideRoute = GuideRouteImport.update({
+  id: '/guide',
+  path: '/guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndividualRoute = IndividualRouteImport.update({
+  id: '/individual',
+  path: '/individual',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McleanRoute = McleanRouteImport.update({
+  id: '/mclean',
+  path: '/mclean',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NoSurprisesActRoute = NoSurprisesActRouteImport.update({
+  id: '/no-surprises-act',
+  path: '/no-surprises-act',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesRoute = ResourcesRouteImport.update({
+  id: '/resources',
+  path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhatIsEmdrRoute = WhatIsEmdrRouteImport.update({
+  id: '/what-is-emdr',
+  path: '/what-is-emdr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhatIsGroupTherapyRoute = WhatIsGroupTherapyRouteImport.update({
+  id: '/what-is-group-therapy',
+  path: '/what-is-group-therapy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhatIsIfsRoute = WhatIsIfsRouteImport.update({
+  id: '/what-is-ifs',
+  path: '/what-is-ifs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WhatIsLcswRoute = WhatIsLcswRouteImport.update({
+  id: '/what-is-lcsw',
+  path: '/what-is-lcsw',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogHowCouplesTherapyWorksRoute =
+  BlogHowCouplesTherapyWorksRouteImport.update({
+    id: '/blog/how-couples-therapy-works',
+    path: '/blog/how-couples-therapy-works',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogHowToFindATherapistNorthernVirginiaRoute =
+  BlogHowToFindATherapistNorthernVirginiaRouteImport.update({
+    id: '/blog/how-to-find-a-therapist-northern-virginia',
+    path: '/blog/how-to-find-a-therapist-northern-virginia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogHowToSupportAStrugglingPartnerRoute =
+  BlogHowToSupportAStrugglingPartnerRouteImport.update({
+    id: '/blog/how-to-support-a-struggling-partner',
+    path: '/blog/how-to-support-a-struggling-partner',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhatIsEmdrRoute = BlogWhatIsEmdrRouteImport.update({
+  id: '/blog/what-is-emdr',
+  path: '/blog/what-is-emdr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogWhatIsGroupTherapyRoute = BlogWhatIsGroupTherapyRouteImport.update({
+  id: '/blog/what-is-group-therapy',
+  path: '/blog/what-is-group-therapy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogWhatIsIfsRoute = BlogWhatIsIfsRouteImport.update({
+  id: '/blog/what-is-ifs',
+  path: '/blog/what-is-ifs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogWhatToExpectFirstSessionRoute =
+  BlogWhatToExpectFirstSessionRouteImport.update({
+    id: '/blog/what-to-expect-first-session',
+    path: '/blog/what-to-expect-first-session',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhatToExpectTraumaTherapyRoute =
+  BlogWhatToExpectTraumaTherapyRouteImport.update({
+    id: '/blog/what-to-expect-trauma-therapy',
+    path: '/blog/what-to-expect-trauma-therapy',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhyHighFunctioningAnxietyRoute =
+  BlogWhyHighFunctioningAnxietyRouteImport.update({
+    id: '/blog/why-high-functioning-anxiety',
+    path: '/blog/why-high-functioning-anxiety',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogWhyOutOfNetworkTherapyRoute =
+  BlogWhyOutOfNetworkTherapyRouteImport.update({
+    id: '/blog/why-out-of-network-therapy',
+    path: '/blog/why-out-of-network-therapy',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/arlington': typeof ArlingtonRoute
+  '/book': typeof BookRoute
+  '/couples': typeof CouplesRoute
+  '/explore': typeof ExploreRoute
+  '/faq': typeof FaqRoute
+  '/fees': typeof FeesRoute
+  '/good-faith-estimate': typeof GoodFaithEstimateRoute
+  '/group': typeof GroupRoute
+  '/guide': typeof GuideRoute
+  '/individual': typeof IndividualRoute
+  '/mclean': typeof McleanRoute
+  '/no-surprises-act': typeof NoSurprisesActRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/resources': typeof ResourcesRoute
+  '/what-is-emdr': typeof WhatIsEmdrRoute
+  '/what-is-group-therapy': typeof WhatIsGroupTherapyRoute
+  '/what-is-ifs': typeof WhatIsIfsRoute
+  '/what-is-lcsw': typeof WhatIsLcswRoute
+  '/blog/how-couples-therapy-works': typeof BlogHowCouplesTherapyWorksRoute
+  '/blog/how-to-find-a-therapist-northern-virginia': typeof BlogHowToFindATherapistNorthernVirginiaRoute
+  '/blog/how-to-support-a-struggling-partner': typeof BlogHowToSupportAStrugglingPartnerRoute
+  '/blog/what-is-emdr': typeof BlogWhatIsEmdrRoute
+  '/blog/what-is-group-therapy': typeof BlogWhatIsGroupTherapyRoute
+  '/blog/what-is-ifs': typeof BlogWhatIsIfsRoute
+  '/blog/what-to-expect-first-session': typeof BlogWhatToExpectFirstSessionRoute
+  '/blog/what-to-expect-trauma-therapy': typeof BlogWhatToExpectTraumaTherapyRoute
+  '/blog/why-high-functioning-anxiety': typeof BlogWhyHighFunctioningAnxietyRoute
+  '/blog/why-out-of-network-therapy': typeof BlogWhyOutOfNetworkTherapyRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/arlington': typeof ArlingtonRoute
+  '/book': typeof BookRoute
+  '/couples': typeof CouplesRoute
+  '/explore': typeof ExploreRoute
+  '/faq': typeof FaqRoute
+  '/fees': typeof FeesRoute
+  '/good-faith-estimate': typeof GoodFaithEstimateRoute
+  '/group': typeof GroupRoute
+  '/guide': typeof GuideRoute
+  '/individual': typeof IndividualRoute
+  '/mclean': typeof McleanRoute
+  '/no-surprises-act': typeof NoSurprisesActRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/resources': typeof ResourcesRoute
+  '/what-is-emdr': typeof WhatIsEmdrRoute
+  '/what-is-group-therapy': typeof WhatIsGroupTherapyRoute
+  '/what-is-ifs': typeof WhatIsIfsRoute
+  '/what-is-lcsw': typeof WhatIsLcswRoute
+  '/blog/how-couples-therapy-works': typeof BlogHowCouplesTherapyWorksRoute
+  '/blog/how-to-find-a-therapist-northern-virginia': typeof BlogHowToFindATherapistNorthernVirginiaRoute
+  '/blog/how-to-support-a-struggling-partner': typeof BlogHowToSupportAStrugglingPartnerRoute
+  '/blog/what-is-emdr': typeof BlogWhatIsEmdrRoute
+  '/blog/what-is-group-therapy': typeof BlogWhatIsGroupTherapyRoute
+  '/blog/what-is-ifs': typeof BlogWhatIsIfsRoute
+  '/blog/what-to-expect-first-session': typeof BlogWhatToExpectFirstSessionRoute
+  '/blog/what-to-expect-trauma-therapy': typeof BlogWhatToExpectTraumaTherapyRoute
+  '/blog/why-high-functioning-anxiety': typeof BlogWhyHighFunctioningAnxietyRoute
+  '/blog/why-out-of-network-therapy': typeof BlogWhyOutOfNetworkTherapyRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/arlington': typeof ArlingtonRoute
+  '/book': typeof BookRoute
+  '/couples': typeof CouplesRoute
+  '/explore': typeof ExploreRoute
+  '/faq': typeof FaqRoute
+  '/fees': typeof FeesRoute
+  '/good-faith-estimate': typeof GoodFaithEstimateRoute
+  '/group': typeof GroupRoute
+  '/guide': typeof GuideRoute
+  '/individual': typeof IndividualRoute
+  '/mclean': typeof McleanRoute
+  '/no-surprises-act': typeof NoSurprisesActRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/resources': typeof ResourcesRoute
+  '/what-is-emdr': typeof WhatIsEmdrRoute
+  '/what-is-group-therapy': typeof WhatIsGroupTherapyRoute
+  '/what-is-ifs': typeof WhatIsIfsRoute
+  '/what-is-lcsw': typeof WhatIsLcswRoute
+  '/blog/how-couples-therapy-works': typeof BlogHowCouplesTherapyWorksRoute
+  '/blog/how-to-find-a-therapist-northern-virginia': typeof BlogHowToFindATherapistNorthernVirginiaRoute
+  '/blog/how-to-support-a-struggling-partner': typeof BlogHowToSupportAStrugglingPartnerRoute
+  '/blog/what-is-emdr': typeof BlogWhatIsEmdrRoute
+  '/blog/what-is-group-therapy': typeof BlogWhatIsGroupTherapyRoute
+  '/blog/what-is-ifs': typeof BlogWhatIsIfsRoute
+  '/blog/what-to-expect-first-session': typeof BlogWhatToExpectFirstSessionRoute
+  '/blog/what-to-expect-trauma-therapy': typeof BlogWhatToExpectTraumaTherapyRoute
+  '/blog/why-high-functioning-anxiety': typeof BlogWhyHighFunctioningAnxietyRoute
+  '/blog/why-out-of-network-therapy': typeof BlogWhyOutOfNetworkTherapyRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/arlington'
+    | '/book'
+    | '/couples'
+    | '/explore'
+    | '/faq'
+    | '/fees'
+    | '/good-faith-estimate'
+    | '/group'
+    | '/guide'
+    | '/individual'
+    | '/mclean'
+    | '/no-surprises-act'
+    | '/privacy-policy'
+    | '/resources'
+    | '/what-is-emdr'
+    | '/what-is-group-therapy'
+    | '/what-is-ifs'
+    | '/what-is-lcsw'
+    | '/blog/how-couples-therapy-works'
+    | '/blog/how-to-find-a-therapist-northern-virginia'
+    | '/blog/how-to-support-a-struggling-partner'
+    | '/blog/what-is-emdr'
+    | '/blog/what-is-group-therapy'
+    | '/blog/what-is-ifs'
+    | '/blog/what-to-expect-first-session'
+    | '/blog/what-to-expect-trauma-therapy'
+    | '/blog/why-high-functioning-anxiety'
+    | '/blog/why-out-of-network-therapy'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/arlington'
+    | '/book'
+    | '/couples'
+    | '/explore'
+    | '/faq'
+    | '/fees'
+    | '/good-faith-estimate'
+    | '/group'
+    | '/guide'
+    | '/individual'
+    | '/mclean'
+    | '/no-surprises-act'
+    | '/privacy-policy'
+    | '/resources'
+    | '/what-is-emdr'
+    | '/what-is-group-therapy'
+    | '/what-is-ifs'
+    | '/what-is-lcsw'
+    | '/blog/how-couples-therapy-works'
+    | '/blog/how-to-find-a-therapist-northern-virginia'
+    | '/blog/how-to-support-a-struggling-partner'
+    | '/blog/what-is-emdr'
+    | '/blog/what-is-group-therapy'
+    | '/blog/what-is-ifs'
+    | '/blog/what-to-expect-first-session'
+    | '/blog/what-to-expect-trauma-therapy'
+    | '/blog/why-high-functioning-anxiety'
+    | '/blog/why-out-of-network-therapy'
+    | '/blog'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/arlington'
+    | '/book'
+    | '/couples'
+    | '/explore'
+    | '/faq'
+    | '/fees'
+    | '/good-faith-estimate'
+    | '/group'
+    | '/guide'
+    | '/individual'
+    | '/mclean'
+    | '/no-surprises-act'
+    | '/privacy-policy'
+    | '/resources'
+    | '/what-is-emdr'
+    | '/what-is-group-therapy'
+    | '/what-is-ifs'
+    | '/what-is-lcsw'
+    | '/blog/how-couples-therapy-works'
+    | '/blog/how-to-find-a-therapist-northern-virginia'
+    | '/blog/how-to-support-a-struggling-partner'
+    | '/blog/what-is-emdr'
+    | '/blog/what-is-group-therapy'
+    | '/blog/what-is-ifs'
+    | '/blog/what-to-expect-first-session'
+    | '/blog/what-to-expect-trauma-therapy'
+    | '/blog/why-high-functioning-anxiety'
+    | '/blog/why-out-of-network-therapy'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ArlingtonRoute: typeof ArlingtonRoute
+  BookRoute: typeof BookRoute
+  CouplesRoute: typeof CouplesRoute
+  ExploreRoute: typeof ExploreRoute
+  FaqRoute: typeof FaqRoute
+  FeesRoute: typeof FeesRoute
+  GoodFaithEstimateRoute: typeof GoodFaithEstimateRoute
+  GroupRoute: typeof GroupRoute
+  GuideRoute: typeof GuideRoute
+  IndividualRoute: typeof IndividualRoute
+  McleanRoute: typeof McleanRoute
+  NoSurprisesActRoute: typeof NoSurprisesActRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  ResourcesRoute: typeof ResourcesRoute
+  WhatIsEmdrRoute: typeof WhatIsEmdrRoute
+  WhatIsGroupTherapyRoute: typeof WhatIsGroupTherapyRoute
+  WhatIsIfsRoute: typeof WhatIsIfsRoute
+  WhatIsLcswRoute: typeof WhatIsLcswRoute
+  BlogHowCouplesTherapyWorksRoute: typeof BlogHowCouplesTherapyWorksRoute
+  BlogHowToFindATherapistNorthernVirginiaRoute: typeof BlogHowToFindATherapistNorthernVirginiaRoute
+  BlogHowToSupportAStrugglingPartnerRoute: typeof BlogHowToSupportAStrugglingPartnerRoute
+  BlogWhatIsEmdrRoute: typeof BlogWhatIsEmdrRoute
+  BlogWhatIsGroupTherapyRoute: typeof BlogWhatIsGroupTherapyRoute
+  BlogWhatIsIfsRoute: typeof BlogWhatIsIfsRoute
+  BlogWhatToExpectFirstSessionRoute: typeof BlogWhatToExpectFirstSessionRoute
+  BlogWhatToExpectTraumaTherapyRoute: typeof BlogWhatToExpectTraumaTherapyRoute
+  BlogWhyHighFunctioningAnxietyRoute: typeof BlogWhyHighFunctioningAnxietyRoute
+  BlogWhyOutOfNetworkTherapyRoute: typeof BlogWhyOutOfNetworkTherapyRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +449,253 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/arlington': {
+      id: '/arlington'
+      path: '/arlington'
+      fullPath: '/arlington'
+      preLoaderRoute: typeof ArlingtonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/book': {
+      id: '/book'
+      path: '/book'
+      fullPath: '/book'
+      preLoaderRoute: typeof BookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/couples': {
+      id: '/couples'
+      path: '/couples'
+      fullPath: '/couples'
+      preLoaderRoute: typeof CouplesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/explore': {
+      id: '/explore'
+      path: '/explore'
+      fullPath: '/explore'
+      preLoaderRoute: typeof ExploreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fees': {
+      id: '/fees'
+      path: '/fees'
+      fullPath: '/fees'
+      preLoaderRoute: typeof FeesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/good-faith-estimate': {
+      id: '/good-faith-estimate'
+      path: '/good-faith-estimate'
+      fullPath: '/good-faith-estimate'
+      preLoaderRoute: typeof GoodFaithEstimateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/group': {
+      id: '/group'
+      path: '/group'
+      fullPath: '/group'
+      preLoaderRoute: typeof GroupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guide': {
+      id: '/guide'
+      path: '/guide'
+      fullPath: '/guide'
+      preLoaderRoute: typeof GuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/individual': {
+      id: '/individual'
+      path: '/individual'
+      fullPath: '/individual'
+      preLoaderRoute: typeof IndividualRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mclean': {
+      id: '/mclean'
+      path: '/mclean'
+      fullPath: '/mclean'
+      preLoaderRoute: typeof McleanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/no-surprises-act': {
+      id: '/no-surprises-act'
+      path: '/no-surprises-act'
+      fullPath: '/no-surprises-act'
+      preLoaderRoute: typeof NoSurprisesActRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
+      preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/what-is-emdr': {
+      id: '/what-is-emdr'
+      path: '/what-is-emdr'
+      fullPath: '/what-is-emdr'
+      preLoaderRoute: typeof WhatIsEmdrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/what-is-group-therapy': {
+      id: '/what-is-group-therapy'
+      path: '/what-is-group-therapy'
+      fullPath: '/what-is-group-therapy'
+      preLoaderRoute: typeof WhatIsGroupTherapyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/what-is-ifs': {
+      id: '/what-is-ifs'
+      path: '/what-is-ifs'
+      fullPath: '/what-is-ifs'
+      preLoaderRoute: typeof WhatIsIfsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/what-is-lcsw': {
+      id: '/what-is-lcsw'
+      path: '/what-is-lcsw'
+      fullPath: '/what-is-lcsw'
+      preLoaderRoute: typeof WhatIsLcswRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/how-couples-therapy-works': {
+      id: '/blog/how-couples-therapy-works'
+      path: '/blog/how-couples-therapy-works'
+      fullPath: '/blog/how-couples-therapy-works'
+      preLoaderRoute: typeof BlogHowCouplesTherapyWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/how-to-find-a-therapist-northern-virginia': {
+      id: '/blog/how-to-find-a-therapist-northern-virginia'
+      path: '/blog/how-to-find-a-therapist-northern-virginia'
+      fullPath: '/blog/how-to-find-a-therapist-northern-virginia'
+      preLoaderRoute: typeof BlogHowToFindATherapistNorthernVirginiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/how-to-support-a-struggling-partner': {
+      id: '/blog/how-to-support-a-struggling-partner'
+      path: '/blog/how-to-support-a-struggling-partner'
+      fullPath: '/blog/how-to-support-a-struggling-partner'
+      preLoaderRoute: typeof BlogHowToSupportAStrugglingPartnerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/what-is-emdr': {
+      id: '/blog/what-is-emdr'
+      path: '/blog/what-is-emdr'
+      fullPath: '/blog/what-is-emdr'
+      preLoaderRoute: typeof BlogWhatIsEmdrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/what-is-group-therapy': {
+      id: '/blog/what-is-group-therapy'
+      path: '/blog/what-is-group-therapy'
+      fullPath: '/blog/what-is-group-therapy'
+      preLoaderRoute: typeof BlogWhatIsGroupTherapyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/what-is-ifs': {
+      id: '/blog/what-is-ifs'
+      path: '/blog/what-is-ifs'
+      fullPath: '/blog/what-is-ifs'
+      preLoaderRoute: typeof BlogWhatIsIfsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/what-to-expect-first-session': {
+      id: '/blog/what-to-expect-first-session'
+      path: '/blog/what-to-expect-first-session'
+      fullPath: '/blog/what-to-expect-first-session'
+      preLoaderRoute: typeof BlogWhatToExpectFirstSessionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/what-to-expect-trauma-therapy': {
+      id: '/blog/what-to-expect-trauma-therapy'
+      path: '/blog/what-to-expect-trauma-therapy'
+      fullPath: '/blog/what-to-expect-trauma-therapy'
+      preLoaderRoute: typeof BlogWhatToExpectTraumaTherapyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/why-high-functioning-anxiety': {
+      id: '/blog/why-high-functioning-anxiety'
+      path: '/blog/why-high-functioning-anxiety'
+      fullPath: '/blog/why-high-functioning-anxiety'
+      preLoaderRoute: typeof BlogWhyHighFunctioningAnxietyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/why-out-of-network-therapy': {
+      id: '/blog/why-out-of-network-therapy'
+      path: '/blog/why-out-of-network-therapy'
+      fullPath: '/blog/why-out-of-network-therapy'
+      preLoaderRoute: typeof BlogWhyOutOfNetworkTherapyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ArlingtonRoute: ArlingtonRoute,
+  BookRoute: BookRoute,
+  CouplesRoute: CouplesRoute,
+  ExploreRoute: ExploreRoute,
+  FaqRoute: FaqRoute,
+  FeesRoute: FeesRoute,
+  GoodFaithEstimateRoute: GoodFaithEstimateRoute,
+  GroupRoute: GroupRoute,
+  GuideRoute: GuideRoute,
+  IndividualRoute: IndividualRoute,
+  McleanRoute: McleanRoute,
+  NoSurprisesActRoute: NoSurprisesActRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
+  ResourcesRoute: ResourcesRoute,
+  WhatIsEmdrRoute: WhatIsEmdrRoute,
+  WhatIsGroupTherapyRoute: WhatIsGroupTherapyRoute,
+  WhatIsIfsRoute: WhatIsIfsRoute,
+  WhatIsLcswRoute: WhatIsLcswRoute,
+  BlogHowCouplesTherapyWorksRoute: BlogHowCouplesTherapyWorksRoute,
+  BlogHowToFindATherapistNorthernVirginiaRoute:
+    BlogHowToFindATherapistNorthernVirginiaRoute,
+  BlogHowToSupportAStrugglingPartnerRoute:
+    BlogHowToSupportAStrugglingPartnerRoute,
+  BlogWhatIsEmdrRoute: BlogWhatIsEmdrRoute,
+  BlogWhatIsGroupTherapyRoute: BlogWhatIsGroupTherapyRoute,
+  BlogWhatIsIfsRoute: BlogWhatIsIfsRoute,
+  BlogWhatToExpectFirstSessionRoute: BlogWhatToExpectFirstSessionRoute,
+  BlogWhatToExpectTraumaTherapyRoute: BlogWhatToExpectTraumaTherapyRoute,
+  BlogWhyHighFunctioningAnxietyRoute: BlogWhyHighFunctioningAnxietyRoute,
+  BlogWhyOutOfNetworkTherapyRoute: BlogWhyOutOfNetworkTherapyRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
