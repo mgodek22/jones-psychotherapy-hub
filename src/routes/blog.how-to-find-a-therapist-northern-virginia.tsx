@@ -158,7 +158,7 @@ export const Route = createFileRoute("/blog/how-to-find-a-therapist-northern-vir
               {
                 "@type": "Article",
                 "headline": "How to Find the Right Therapist in Northern Virginia",
-                "description": "The \"right\" therapist matters more than the \"perfect\" one. Here's a practical way to find a good-fit therapist in Arlington, McLean, and the DC metro.",
+                "description": "The \"right\" therapist matters more than the \"perfect\" one. Here's a practical way to find a good-fit therapist in Arlington, McLean, and Northern Virginia.",
                 "author": {
                   "@id": "https://www.jonespsychotherapy.com/#emily"
                 },
