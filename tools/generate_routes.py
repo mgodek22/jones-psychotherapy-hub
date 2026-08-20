@@ -142,7 +142,7 @@ def replace_forms(main: str):
         label_attr = (
             f' ctaLabel="{unescape(label.group(1)).strip()}"' if label else ""
         )
-        return f"{{CONSULT{label_attr}}}"
+        return f"@@CONSULT{label_attr}@@"
 
     main = re.sub(
         r'<form class="formcard" id="consultForm".*?</form>\s*<div class="thanks" id="thanks">.*?</div>',
@@ -153,7 +153,7 @@ def replace_forms(main: str):
 
     def optin(m):
         uses.add("OptinForm")
-        return "{OPTIN}"
+        return "@@OPTIN@@"
 
     main = re.sub(
         r'<form id="optinForm".*?</form>\s*<div class="thanks" id="optinThanks">.*?</div>\s*(?=</div>)',
@@ -177,9 +177,9 @@ def build(slug: str, src: str) -> str:
     jsx = convert(main)
 
     variant = "guide" if slug == "guide" else "index"
-    jsx = jsx.replace("{OPTIN}", f'<OptinForm variant="{variant}" />')
+    jsx = jsx.replace("@@OPTIN@@", f'<OptinForm variant="{variant}" />')
     jsx = re.sub(
-        r"\{CONSULT(?: ctaLabel=\"([^\"]*)\")?\}",
+        r"@@CONSULT(?: ctaLabel=\"([^\"]*)\")?@@",
         lambda m: f'<ConsultHandoff ctaLabel="{m.group(1)}" />'
         if m.group(1)
         else "<ConsultHandoff />",
