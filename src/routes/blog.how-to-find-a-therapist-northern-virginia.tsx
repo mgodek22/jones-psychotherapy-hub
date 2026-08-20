@@ -253,17 +253,17 @@ function BlogHowToFindATherapistNorthernVirginiaPage() {
         "label": "How"
       }
     ]}>
-      <section className="arthero"><div className="wrap"><div className="artcat">How</div><h1>How to Find the Right Therapist in Northern Virginia</h1><p className="artdek">The single biggest predictor of good outcomes isn't the method — it's the fit between you and your therapist. Here's how to find that in Northern Virginia without the overwhelm.</p><p className="artmeta">By Emily M. Jones, LCSW, CGP· Jones Psychotherapy, Arlington &amp; McLean, VA</p></div></section>
+      <section className="arthero"><div className="wrap"><div className="artcat">How</div><h1>How to Find the Right Therapist in Northern Virginia</h1><p className="artdek">The single biggest predictor of good outcomes isn't the method — it's the fit between you and your therapist. Here's how to find that in Northern Virginia without the overwhelm.</p><p className="artmeta">By Emily M. Jones, LCSW, CGP· Jones Psychotherapy, Arlington & McLean, VA</p></div></section>
       <section className="band"><div className="wrap"><div className="prose">
       <h3>1. Start with fit, then specialty</h3>
       <p>Look for someone who works with your concern (say, trauma, anxiety, or couples) <em>and</em> whom you feel at ease with. Most good therapists offer a free consultation — use it. Notice whether you feel heard.</p>
       <p>For specific approaches, you can filter: EMDR (via EMDRIA), IFS (via the IFS Institute), or couples/EFT. My practice combines EMDR, IFS, attachment work, couples therapy, and groups.</p>
-      <div className="pullquote"><p>&ldquo;The therapy relationship makes substantial and consistent contributions to psychotherapy outcome, independent of the specific type of treatment.&rdquo;</p><cite>&mdash; APA Task Force on Evidence-Based Therapy Relationships (Norcross &amp; Wampold)</cite></div>
+      <div className="pullquote"><p>“The therapy relationship makes substantial and consistent contributions to psychotherapy outcome, independent of the specific type of treatment.”</p><cite>— APA Task Force on Evidence-Based Therapy Relationships (Norcross & Wampold)</cite></div>
       <h3>2. Understand the money up front</h3>
       <p>Many excellent therapists in the DC area are out-of-network (private pay). That doesn't have to mean unaffordable — ask whether they provide a <Link to="/blog/why-out-of-network-therapy">superbill</Link> so you can seek partial reimbursement from your insurer. Ask about fees and sliding scale before you start.</p>
       <h3>3. In person or virtual</h3>
       <p>Decide whether you want in-person sessions (I have offices in Arlington and McLean) or the flexibility of telehealth. Both work well; it's about what fits your life.</p>
-      <div className="midcta"><p>Wondering if this is the right fit for you? Let's talk it through — no pressure.</p><Link className="btn" to="/book">Book a free 15-minute consultation</Link></div>
+      <div className="midcta"><p>Wondering if this is the right fit for you? Let's talk it through — no pressure.</p><Link to="/book" className="btn">Book a free 15-minute consultation</Link></div>
       <h3>4. Trust the first few sessions</h3>
       <p>It's okay to meet with more than one therapist before deciding, and okay to say "this isn't quite the fit." A good therapist will support you either way.</p>
       <h3>Why fit matters more than method</h3>
@@ -272,7 +272,7 @@ function BlogHowToFindATherapistNorthernVirginiaPage() {
       <div className="tipbox"><h4>A quick therapist-vetting checklist</h4><ul><li>Confirm they're licensed in your state (verify with the state board).</li><li>Ask whether they treat your specific concern, and how often.</li><li>Use the free consult to notice one thing: do I feel heard here?</li><li>Get clear on fees, sliding scale, and superbills before session one.</li><li>Give it two or three sessions before judging fit — but trust a clear "no."</li></ul></div>
       </div></div></section>
       <section className="band"><div className="wrap" style={{"maxWidth": "760px"}}><h2 style={{"fontSize": "26px"}}>Common questions</h2><div className="faqwrap" style={{"marginTop": "14px"}}><details><summary>How do I know if a therapist is licensed?</summary><p>Check that they're licensed in your state (Virginia or Utah for me) — you can verify through the state licensing board.</p></details><details><summary>What's a superbill?</summary><p>A monthly receipt you submit to your insurer for possible out-of-network reimbursement. See our fees and insurance details.</p></details><details><summary>How many therapists should I talk to?</summary><p>There's no rule. Many people click with the first good-fit consult; others meet two or three. The free consultation exists precisely so you can compare without cost.</p></details><details><summary>Do you have openings?</summary><p>I have limited openings for individual and couples clients in Arlington, McLean, and by video. Book a free consult to check availability.</p></details></div></div></section>
-      <section className="band cream"><div className="wrap"><div className="center"><div className="kick">Ready when you are</div><h2>Let's take the first step together.</h2><p className="sub2">Book a free, no-pressure 15-minute consultation with Emily M. Jones, LCSW, CGP.</p><div style={{"marginTop": "18px"}}><Link className="btn lg" to="/book">Book a free consultation</Link></div></div></div></section>
+      <section className="band cream"><div className="wrap"><div className="center"><div className="kick">Ready when you are</div><h2>Let's take the first step together.</h2><p className="sub2">Book a free, no-pressure 15-minute consultation with Emily M. Jones, LCSW, CGP.</p><div style={{"marginTop": "18px"}}><Link to="/book" className="btn lg">Book a free consultation</Link></div></div></div></section>
     </SiteLayout>
   );
 }

@@ -197,8 +197,8 @@ export const Route = createFileRoute("/book")({
 function BookPage() {
   return (
     <FunnelLayout>
-      <section className="hero solo"><div className="wrap"><div> <div className="eyebrow">Free 15-minute consultation· No pressure</div> <h1>Let's take the <em>first step</em> together.</h1> <p className="sub">Tell me a little about what's bringing you in, and I'll reach out within one business day to find a time. This first call is free, confidential, and there's no obligation to continue.</p> <div className="riskrow"><span>✓ <b>Free</b> &amp; confidential</span><span>✓ <b>No obligation</b></span><span>✓ Reply within <b>1 business day</b></span></div> </div></div></section>
-      <section className="band cream"><div className="wrap"> {'{'{'}'}CONSULT ctaLabel="Request my free consultation"{'}'}
+      <section className="hero solo"><div className="wrap"><div> <div className="eyebrow">Free 15-minute consultation· No pressure</div> <h1>Let's take the <em>first step</em> together.</h1> <p className="sub">Tell me a little about what's bringing you in, and I'll reach out within one business day to find a time. This first call is free, confidential, and there's no obligation to continue.</p> <div className="riskrow"><span>✓ <b>Free</b> & confidential</span><span>✓ <b>No obligation</b></span><span>✓ Reply within <b>1 business day</b></span></div> </div></div></section>
+      <section className="band cream"><div className="wrap"> <ConsultHandoff ctaLabel="Request my free consultation" />
       </div></section>
     </FunnelLayout>
   );

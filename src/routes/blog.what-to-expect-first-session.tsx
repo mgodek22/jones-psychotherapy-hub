@@ -265,15 +265,15 @@ function BlogWhatToExpectFirstSessionPage() {
         "label": "What to expect"
       }
     ]}>
-      <section className="arthero"><div className="wrap"><div className="artcat">What to expect</div><h1>What to Expect in Your First Therapy Session</h1><p className="artdek">Your first session is mostly a conversation: we get to know each other, you share what's bringing you in, and together we sketch out where you'd like to go. There's no pressure to "perform."</p><p className="artmeta">By Emily M. Jones, LCSW, CGP· Jones Psychotherapy, Arlington &amp; McLean, VA</p></div></section>
+      <section className="arthero"><div className="wrap"><div className="artcat">What to expect</div><h1>What to Expect in Your First Therapy Session</h1><p className="artdek">Your first session is mostly a conversation: we get to know each other, you share what's bringing you in, and together we sketch out where you'd like to go. There's no pressure to "perform."</p><p className="artmeta">By Emily M. Jones, LCSW, CGP· Jones Psychotherapy, Arlington & McLean, VA</p></div></section>
       <section className="band"><div className="wrap"><div className="prose">
       <h3>Before we meet</h3>
       <p>Most people start with a free 15-minute consultation — a quick call to see whether we're a good fit. If we decide to move forward, you'll get a bit of intake paperwork to complete beforehand so we can spend our time together talking, not filling out forms.</p>
-      <div className="pullquote"><p>&ldquo;The curious paradox is that when I accept myself just as I am, then I can change.&rdquo;</p><cite>&mdash; Carl Rogers, On Becoming a Person</cite></div>
+      <div className="pullquote"><p>“The curious paradox is that when I accept myself just as I am, then I can change.”</p><cite>— Carl Rogers, On Becoming a Person</cite></div>
       <h3>During the first session</h3>
       <p>We'll talk about what's bringing you in now, a little of your history, and what you're hoping will feel different. I'll ask questions, but you set the pace — you never have to share more than you're ready to. It's also your chance to interview <em>me</em>: ask about my approach, experience, and how I work.</p>
       <p>By the end, we'll have a loose sense of direction and a plan for how often to meet (usually weekly, 50 minutes).</p>
-      <div className="midcta"><p>Wondering if this is the right fit for you? Let's talk it through — no pressure.</p><Link className="btn" to="/book">Book a free 15-minute consultation</Link></div>
+      <div className="midcta"><p>Wondering if this is the right fit for you? Let's talk it through — no pressure.</p><Link to="/book" className="btn">Book a free 15-minute consultation</Link></div>
       <h3>It's normal to feel nervous</h3>
       <p>Reaching out is often the hardest part, and a little anxiety before a first session is completely normal. My style is warm and down-to-earth — the goal is for you to leave feeling heard, not judged.</p>
       <p>You don't need to have your story organized or know exactly what's wrong. "I'm not even sure how to explain it" is a perfectly good place to begin.</p>
@@ -283,7 +283,7 @@ function BlogWhatToExpectFirstSessionPage() {
       <div className="tipbox"><h4>How to prepare for your first session</h4><ul><li>Jot down what's bringing you in now, and what you'd like to feel different.</li><li>Bring your questions — a first session is your chance to interview me, too.</li><li>Complete any intake forms beforehand so we can spend the time talking.</li><li>Arrive a few minutes early, or test your video link, so you can settle in.</li><li>Remember there's no "right" way to start. Nervous is normal.</li></ul></div>
       </div></div></section>
       <section className="band"><div className="wrap" style={{"maxWidth": "760px"}}><h2 style={{"fontSize": "26px"}}>Common questions</h2><div className="faqwrap" style={{"marginTop": "14px"}}><details><summary>How long is a session?</summary><p>Individual sessions are 50 minutes. The first one may feel a little more structured as we gather background.</p></details><details><summary>What if it's not the right fit?</summary><p>That's okay and it happens — a good fit matters more than anything. I'm glad to help you find someone who's a better match.</p></details><details><summary>How soon will I feel better?</summary><p>Many people feel some relief just from being heard. Real change is gradual; we'll track your goals so progress stays visible.</p></details><details><summary>Do you offer virtual sessions?</summary><p>Yes — in person in Arlington and McLean, and by secure video across Virginia and Utah.</p></details></div></div></section>
-      <section className="band cream"><div className="wrap"><div className="center"><div className="kick">Ready when you are</div><h2>Let's take the first step together.</h2><p className="sub2">Book a free, no-pressure 15-minute consultation with Emily M. Jones, LCSW, CGP.</p><div style={{"marginTop": "18px"}}><Link className="btn lg" to="/book">Book a free consultation</Link></div></div></div></section>
+      <section className="band cream"><div className="wrap"><div className="center"><div className="kick">Ready when you are</div><h2>Let's take the first step together.</h2><p className="sub2">Book a free, no-pressure 15-minute consultation with Emily M. Jones, LCSW, CGP.</p><div style={{"marginTop": "18px"}}><Link to="/book" className="btn lg">Book a free consultation</Link></div></div></div></section>
     </SiteLayout>
   );
 }
